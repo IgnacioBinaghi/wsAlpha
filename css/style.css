@@ -14,6 +14,7 @@ html{
 body{
   margin: 0;
   padding: 0;
+  font-family: Poppins-Regular;
 }
 
 .spacing1{
@@ -42,11 +43,11 @@ body{
 .toolbar_text{
   width: 40%;
   text-align: right;
-  margin-top: 1.5%;
+  margin-top: 2%;
 }
 
 .toolbar_text a{
-  margin-right: 8%;
+  margin-right: 7%;
   font-family: Poppins-Regular;
   justify-content: center;
   text-align: center;
@@ -60,8 +61,131 @@ body{
   color: #C2A128;
 }
 
+
+.modal-container {
+}
+
+#open{
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  font-size: 125%;
+  color: #43546B;
+  transition: .25s;
+  margin-left: -2%;
+  margin-right: 4%;
+}
+
+#open:hover{
+  color: #C2A128;
+}
+
+.container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(194, 161, 40,.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.modal{
+  background-color: white;
+  width: 325px;
+  padding: 30px 50px;
+  max-width: 100%;
+  height: 450px;
+  max-height: 100%;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.modal h2{
+  margin: 0;
+  text-align: center;
+}
+
+.modal #login{
+  text-align: center;
+}
+
+#login{
+  background-color: #C2A128;
+  width: 101.5%;
+  height: 10%;
+  border: white;
+  color: white;
+  font-family: Poppins-Regular;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .1s;
+  margin-top: 10%;
+}
+
+#login:hover{
+  background-color: #c4ad58;
+}
+
+.modal p{
+    margin-top: 10%;
+    margin-bottom: 0;
+    text-align: left;
+    font-family: poppins-light;
+}
+
+#email_login, #password_login{
+  width: 100%;
+  text-align: left;
+  height: 10%;
+  text-indent: 5%;
+  border-radius: 5px;
+  border: solid .5px #43546B;
+}
+
+#or {
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid #000;
+   line-height: 0.1em;
+   margin: 10px 5 20px;
+}
+
+#or span {
+    background:#fff;
+    padding:0 10px;
+}
+
+
 .body_text{
   height: 80vh;
+}
+
+.stock_images{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.coinbase_img{
+  height: 50%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.binance_img{
+  height: 50%;
+  margin-right: 5%;
+  margin-top: 4%;
+}
+
+.TD_img{
+  margin-top: 3%;
 }
 
 .center_text{
@@ -86,34 +210,50 @@ body{
 .center_text input{
   font-family: Poppins-Regular;
   color: #43546B;
-  border: solid .5px #43546B;
   border-radius: 100px;
+  border: solid .5px #43546B;
 }
 
 input[type="text"] {
-  width: 50%;
+  width: 40%;
   height: 5vh;
   text-indent: 5%;
 }
 
 input[type="submit"] {
-    margin-left: -10%;
+    margin-left: 2%;
+    cursor: pointer;
     width: 30%;
-    height: 5.4vh;
+    height: 5.5vh;
     background-color: #C2A128;
+    border: white;
     color: white;
-    border: none;
+    transition: .1s;
 }
+input[type="submit"]:hover{
+  background-color: #c4ad58;
+}
+
+
 
 .page_two_format{
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
-  height: 10vh;
+  height: 8vh;
+  width: 100%;
   background-color: #43546B;
+  text-align:center;
+}
+
+.page_two_format a{
+  width: 100vh;
+
 }
 
 .page_two_format img{
   padding-top: 1%;
+  width: auto;
+  height: 50%;
   display: block;
   margin: auto;
   transition: .5s;
