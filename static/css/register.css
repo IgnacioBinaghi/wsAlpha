@@ -161,109 +161,55 @@ body{
     padding:0 10px;
 }
 
-
-.body_text{
+.body_text2{
   height: 80vh;
+  width: 25%;
+  margin: 0 auto;
+  border-radius: 5px;
+  justify-content: left;
+  color: #43546B;
+  font-family: Poppins-Regular;
 }
 
-.stock_images{
-  height: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-.coinbase_img{
-  height: 50%;
-  margin-right: 5%;
-  margin-top: 5%;
-}
-
-.binance_img{
-  height: 50%;
-  margin-right: 5%;
-  margin-top: 4%;
-}
-
-.TD_img{
-  margin-top: 3%;
-}
-
-.center_text{
+.body_text2 h1{
   text-align: center;
-  float:right;
-  margin-top: 7%;
-  margin-right: 5%;
-  height: 50%;
-  width: 40%;
 }
 
-.center_text h1{
+.body_text2 p{
+  margin-left: 10%;
+  margin-bottom: 0;
+}
+
+.body_text2 input{
+  margin-left: 10%;
+  width: 80%;
+  height: 2vh;
+  text-indent: 2%;
   font-family: Poppins-Regular;
-  color: #43546B;
 }
 
-.center_text p{
+#register{
+  margin-left: 10%;
+  width: 81.5%;
+  margin-top: 5%;
+  border-radius: 5px;
   font-family: Poppins-Regular;
-  color: #43546B;
+  border: none;
+  cursor: pointer;
+  background-color: #C2A128;
+  transition: .1s;
+  height: 3vh;
 }
 
-.center_text input{
-  font-family: Poppins-Regular;
-  color: #43546B;
-  border-radius: 100px;
-  border: solid .5px #43546B;
-}
-
-input[type="text"] {
-  width: 40%;
-  height: 5vh;
-  text-indent: 5%;
-}
-
-input[type="submit"] {
-    margin-left: 2%;
-    cursor: pointer;
-    width: 30%;
-    height: 5.5vh;
-    background-color: #C2A128;
-    border: white;
-    color: white;
-    transition: .1s;
-}
-input[type="submit"]:hover{
+#register:hover{
   background-color: #c4ad58;
 }
 
-
-
-.page_two_format{
-  border-top-left-radius: 100%;
-  border-top-right-radius: 100%;
-  height: 8vh;
-  width: 100%;
-  background-color: #43546B;
-  text-align:center;
-}
-
-.page_two_format a{
-  width: 100vh;
-
-}
-
-.page_two_format img{
-  padding-top: 1%;
-  width: auto;
-  height: 50%;
-  display: block;
-  margin: auto;
-  transition: .5s;
-}
-
-.page_two_format img:hover{
-  padding-top: 1.5%;
-}
-
-#page_two{
-  height: 90vh;
-  background-color: #43546B;
+#rememberme{
+  display: flex;
+  font-family: Poppins-Regular;
+  color: #43546B;
+  align-items: left;
+  text-align: left;
+  background-color: red;
 }
