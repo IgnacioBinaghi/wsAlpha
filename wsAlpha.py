@@ -10,7 +10,6 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-
 @app.route("/register")
 def result():
     return render_template('register.html')
@@ -26,6 +25,12 @@ def register():
 def profile():
     return render_template('dashboard.html')
 
+@app.route("/unsubcribe", methods=["POST", "GET"])
+def confirmUnsubcribe():
+    output = request.form.to_dict()
+    email = output["emailUnsub"]
+    removeFromNewsletter.unsub_mailjet(email)
+    return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80, debug=True, threaded=True)
