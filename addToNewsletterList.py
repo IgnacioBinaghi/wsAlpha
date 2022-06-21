@@ -5,13 +5,13 @@ from mailjet_rest import Client
 import os
 import pprint
 
-def add_mailjet(userEmail):
+def add_mailjet(x_mail):
     api_key = '62ab7bb78295b072593fbf3c793118ca'
     api_secret = '6a18f10c1dd466f55e8bf221b87e706f'
 
     mailjet = Client(auth=(api_key, api_secret))
 
-    email = userEmail
+    email = x_mail
     listID = '26947'
 
     data_basic = {
