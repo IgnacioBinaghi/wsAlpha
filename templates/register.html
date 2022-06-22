@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>wsAlpha</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/register.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='script/favicon.ico')}}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='script/script.js')}}"></script>
   </head>
@@ -15,39 +16,17 @@
       <div class="toolbar_text">
         <a href="/home">Home</a>
         <a href="/about">About Us</a>
-        <button id="open">
-          Log In
-        </button>
-        <div class="container">
-          <div class="modal">
-            <h2>Log In</h2>
-            <p>Email</p>
-            <input type="text" id="email_login" name="email">
-            <br>
-            <p>Password</p>
-            <input type="password" id="password_login" name="password">
-            <br>
-            <button id="login">
-              Log In
-            </button>
-            <p id="or"> <span>Or</span> </p>
-            <img src="{{ url_for('static', filename='images/google.png')}}" height="10%;" style="margin-left: 43%; margin-top: 10%;">
-          </div>
-        </div>
-        <a href="/register">Register</a>
       </div>
     </div>
     <div class="spacing1"></div>
     <div class="body_text2">
       <div class="make_account">
         <h1>Register An Account</h1>
-        <form class="form-singin" method="POST" action="/profile">
+        <form class="form-singin" method="get" action="/dashboard">
           <p>Email</p>
           <input type="email" id="email_login2" name="email">
           <p>Password</p>
           <input type="password" id="password_login2" name="password">
-          <input type="checkbox" id="rememberme" name="rememberme" value="rememberme">
-          <label for="rememberme">Remember Me</label><br>
           <input id="register" type="submit" value="Register">
         </form>
       </div>

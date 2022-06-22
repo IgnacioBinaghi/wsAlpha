@@ -63,44 +63,10 @@ body{
 
 
 .body_text2{
-  height: 80vh;
-  width: 25%;
-  margin: 0 auto;
-  border-radius: 5px;
+  height: 85vh;
+}
+
+.body_text2 h1, p, input{
+  margin-left: 5%;
   color: #43546B;
-  font-family: Poppins-Regular;
-}
-
-.body_text2 h1{
-  text-align: center;
-}
-
-.body_text2 p{
-  margin-left: 10%;
-  margin-bottom: 0;
-}
-
-.body_text2 input{
-  margin-left: 10%;
-  width: 80%;
-  height: 3vh;
-  text-indent: 2%;
-  font-family: Poppins-Regular;
-}
-
-#register{
-  margin-left: 10%;
-  width: 81.5%;
-  margin-top: 5%;
-  border-radius: 5px;
-  font-family: Poppins-Regular;
-  border: none;
-  cursor: pointer;
-  background-color: #C2A128;
-  transition: .1s;
-  height: 4vh;
-}
-
-#register:hover{
-  background-color: #c4ad58;
 }

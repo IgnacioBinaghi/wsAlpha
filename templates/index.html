@@ -21,8 +21,11 @@
         </button>
         <div class="container">
           <div class="modal">
-            <form action="/profile" method="POST">
-              <h2>Log In</h2>
+            <form action="/dashboard" method="GET">
+              <div class="login1">
+                <h2>Log In</h2>
+                <span>&#x2715;</span>
+              </div>
               <p>Email</p>
               <input type="email" id="email_login" name="email">
               <br>
@@ -33,7 +36,7 @@
                 Log In
               </button>
               <p id="or"> <span>Or</span> </p>
-              <img src="{{ url_for('static', filename='images/google.png')}}" height="10%;" style="margin-left: 43%; margin-top: 10%;">
+              <img src="{{ url_for('static', filename='images/google.png')}}" height="50px" style="margin-left: 43%; margin-top: 10%;">
             </form>
           </div>
         </div>

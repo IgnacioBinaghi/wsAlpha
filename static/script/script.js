@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.container').css("opacity","1");
     $('.container').css("pointer-events","auto");
   });
-  $('#login').click(function(){
+  $('.login1 span').click(function(){
     $('.container').css("opacity","0");
     $('.container').css("pointer-events","none");
   });
