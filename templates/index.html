@@ -49,9 +49,20 @@
         <h1>Your Portfolios, All in One</h1>
         <p>We take your portfolios and put them in once place,</p>
         <p>also providing a concise and tailor made market update.</p>
-        <form class="grid" action="/register" method="POST">
+
+        {% block content %}
+          {% with messaged= get_flashed_messages() %}
+            {% if messages %}
+              {% for msg in messages %}
+                <p>SUP</p>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+        <form class="grid" action="/registered" method="POST">
           <input type="email" id="email" name="email" placeholder="Enter Email" value="{{email if email}}"><input id="submit" type="submit" value="Subscribe">
         </form>
+        {% endblock %}
+
         <div class="stock_images">
           <div class="coinbase_img">
             <img src="{{ url_for('static', filename='images/coinbase-logo.png')}}" style="height: 90%;">
