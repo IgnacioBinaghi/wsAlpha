@@ -7,4 +7,9 @@ $(document).ready(function(){
     $('.container').css("opacity","0");
     $('.container').css("pointer-events","none");
   });
+  $('#submit').click(function(){
+    $('#email').remove();
+    alert("Thanks For Subscribing!");
+    $("#submit").remove();
+  });
 });
