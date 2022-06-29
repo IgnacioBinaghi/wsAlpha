@@ -104,3 +104,7 @@ body{
 #register:hover{
   background-color: #c4ad58;
 }
+
+.red-star {
+    color: red;
+}

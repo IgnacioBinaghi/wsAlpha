@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>wsAlpha</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dashboard.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/register.css')}}">
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='script/favicon.ico')}}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='script/script.js')}}"></script>
@@ -20,12 +20,16 @@
     </div>
     <div class="spacing1"></div>
     <div class="body_text2">
-      <h1>Welcome, {{email}}</h1>
-      <form class="unsubscribe" action="/unsubscribe" method="POST">
-        <p> Enter email below and click on "unsubscribe" to unsubcribe. </p>
-        <input type="email" id="email_unsubscribe" name="email_unsubscribe">
-        <input id="submit_unsubscription" type="submit" value="Unsubscribe">
-      </form>
+      <div class="make_account">
+        <h1>Log In</h1>
+        <form class="form-singin" action="/login" method="POST">
+          <p>Email<span class="red-star">*</span></p>
+          <input type="email" id="email_login" name="email_login" required>
+          <p>Password<span class="red-star">*</span></p>
+          <input type="password" id="password_login" name="password" required>
+          <input id="register" type="submit" value="Log In">
+        </form>
+      </div>
     </div>
   </body>
 </html>

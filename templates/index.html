@@ -21,16 +21,16 @@
         </button>
         <div class="container">
           <div class="modal">
-            <form action="/dashboard" method="GET">
+            <form action="/dashboard" method="POST">
               <div class="login1">
                 <h2>Log In</h2>
                 <span>&#x2715;</span>
               </div>
-              <p>Email</p>
-              <input type="email" id="email_login" name="email">
+              <p>Email<span class="red-star">*</span></p>
+              <input type="email" id="email_login" name="email_login" required>
               <br>
-              <p>Password</p>
-              <input type="password" id="password_login" name="password">
+              <p>Password<span class="red-star">*</span></p>
+              <input type="password" id="password_login" name="password" required>
               <br>
               <button id="login">
                 Log In
@@ -49,20 +49,9 @@
         <h1>Your Portfolios, All in One</h1>
         <p>We take your portfolios and put them in once place,</p>
         <p>also providing a concise and tailor made market update.</p>
-
-        {% block content %}
-          {% with messaged= get_flashed_messages() %}
-            {% if messages %}
-              {% for msg in messages %}
-                <p>SUP</p>
-              {% endfor %}
-            {% endif %}
-          {% endwith %}
-        <form class="grid" action="/registered" method="POST">
-          <input type="email" id="email" name="email" placeholder="Enter Email" value="{{email if email}}"><input id="submit" type="submit" value="Subscribe">
+        <form class="grid" action="/subscribe" method="POST">
+          <input type="email" id="email" name="email" placeholder="Enter Email" value="{{email if email}}"><input id="submit_subscription" type="submit" value="Subscribe">
         </form>
-        {% endblock %}
-
         <div class="stock_images">
           <div class="coinbase_img">
             <img src="{{ url_for('static', filename='images/coinbase-logo.png')}}" style="height: 90%;">

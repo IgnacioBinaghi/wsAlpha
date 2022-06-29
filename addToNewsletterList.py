@@ -29,18 +29,18 @@ def add_mailjet(x_mail):
     # print(resultAll.json())
 
     # create a contact and add to the Newsletter Contacts List
-    resultSub = mailjet.listrecipient.create(data=data_newsletter_list)
+    # resultSub = mailjet.listrecipient.create(data=data_newsletter_list)
     # print(resultSub.status_code)
     # print(resultSub.json())
 
     ## force subcribe if in list already but not subcribed
-    if resultSub.json()['ErrorMessage'] == 'A duplicate ListRecipient already exists.':
-        data = {
-            'Action': "addforce",
-            'Contacts': [
-              {
-                "Email": email,
-              }
-            ]
-        }
-        result = mailjet.contactslist_managemanycontacts.create(id=listID, data=data)
+    #if resultSub.json()['ErrorMessage'] == 'A duplicate ListRecipient already exists.':
+    data = {
+        'Action': "addforce",
+        'Contacts': [
+          {
+            "Email": email,
+          }
+        ]
+    }
+    result = mailjet.contactslist_managemanycontacts.create(id=listID, data=data)

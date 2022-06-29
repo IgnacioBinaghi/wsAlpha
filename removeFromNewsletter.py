@@ -3,7 +3,7 @@ import os
 import pprint
 
 
-def remove_mailjet(user_mail)
+def remove_mailjet(user_mail):
 	api_key = '62ab7bb78295b072593fbf3c793118ca'
 	api_secret = '6a18f10c1dd466f55e8bf221b87e706f'
 
@@ -22,7 +22,7 @@ def remove_mailjet(user_mail)
 	# print(result.status_code)
 	# print(result.json())
 
-def unsubcribe_mailjet(user_mail)
+def unsubcribe_mailjet(user_mail):
 	api_key = '62ab7bb78295b072593fbf3c793118ca'
 	api_secret = '6a18f10c1dd466f55e8bf221b87e706f'
 

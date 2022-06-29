@@ -278,3 +278,7 @@ input[type="submit"]:hover{
   height: 90vh;
   background-color: #43546B;
 }
+
+.red-star {
+    color: red;
+}
