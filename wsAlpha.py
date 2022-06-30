@@ -19,7 +19,7 @@ def subscribe():
 @app.route("/login", methods=["POST", "GET"])
 def login():
     if request.method == "POST":
-        email = request.form.get("email")
+        email = request.form.get("email_login")
         return redirect("/dashboard")
     else:
         return render_template("login.html")
