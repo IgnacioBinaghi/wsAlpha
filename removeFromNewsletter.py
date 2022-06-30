@@ -10,7 +10,7 @@ def remove_mailjet(user_mail):
 	mailjet = Client(auth=(api_key, api_secret), version='v3')
 
 	email = user_mail
-	listID = '26947'
+	listID = '29238'
 	action = 'remove' # or unsub??
 
 	data = {

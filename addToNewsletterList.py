@@ -12,7 +12,7 @@ def add_mailjet(x_mail):
     mailjet = Client(auth=(api_key, api_secret))
 
     email = x_mail
-    listID = '26947'
+    listID = '29238'
 
     data_basic = {
         "Email" : email

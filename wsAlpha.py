@@ -14,7 +14,6 @@ def home():
 def subscribe():
     email = request.form.get("email")
     addToNewsletterList.add_mailjet(email)
-    flash('You have registered successfully', 'info')
     return redirect("/")
 
 @app.route("/login", methods=["POST", "GET"])
@@ -43,7 +42,7 @@ def profile():
 @app.route("/unsubscribe", methods=["POST"])
 def unsubscribe():
     email = request.form.get("email")
-    removeFromNewsletter.remove_mailjet(username)
+    removeFromNewsletter.remove_mailjet(email)
     flash('You have unsubcribed successfully', 'info')
     return render_template("index.html")
 
